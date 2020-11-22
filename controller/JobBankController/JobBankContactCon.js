@@ -34,13 +34,11 @@ JobBankContactUpdate = async (req, res) => {
           useFindAndModify: false,
         }
       );
-      res
-        .status(200)
-        .send({
-          success: true,
-          message: "Job Bank Contact Updated",
-          data: result,
-        });
+      res.status(200).send({
+        success: true,
+        message: "Job Bank Contact Updated",
+        data: result,
+      });
     }
   } catch (err) {
     res.status(422).json({ success: false, message: err.message });

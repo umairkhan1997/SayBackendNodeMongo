@@ -1,7 +1,7 @@
 const HomeIntroSchema = require("../../model/HomeModel/HomeIntroSchema");
 
 homeIntroUpdate = async (req, res) => {
-  const { id, data, introTxt } = req.body;
+  const { id, data, introTxtOne, introTxtTwo } = req.body;
   const homeIntr = await HomeIntroSchema.findById(id);
 
   try {

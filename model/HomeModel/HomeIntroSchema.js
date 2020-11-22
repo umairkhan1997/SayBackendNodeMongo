@@ -6,7 +6,12 @@ const HomeIntro = mongoose.Schema({
     unique: true,
     required: true,
   },
-  introTxt: {
+  introTxtOne: {
+    type: String,
+    unique: true,
+    required: true,
+  },
+  introTxtTwo: {
     type: String,
     unique: true,
     required: true,
