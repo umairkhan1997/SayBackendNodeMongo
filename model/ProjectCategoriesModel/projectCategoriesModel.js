@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 const ProjectsCategories = mongoose.Schema({
   proIcon: {
     type: String,
-    unique: true,
     required: true,
   },
   proName: {
@@ -13,7 +12,6 @@ const ProjectsCategories = mongoose.Schema({
   },
   proDescrip: {
     type: String,
-    unique: true,
     required: true,
   },
   proHrefVal: {
