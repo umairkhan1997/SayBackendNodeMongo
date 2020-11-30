@@ -3,7 +3,7 @@ const express = require("express");
 const bd = require("body-parser");
 const app = express();
 const mongoose = require("mongoose");
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 // const homeRoute = require('./routes/HomeRouter/HomeRoute');
 const mainRouter = require("./routes/mainRouter");
 const { mogoUrl } = require("./key");
@@ -29,6 +29,6 @@ mongoose.connection.on("error", (err) => {
 // res.send('welcome to server');
 // })
 
-app.listen(PORT, () => {
+app.listen(port, () => {
   console.log("server running");
 });
